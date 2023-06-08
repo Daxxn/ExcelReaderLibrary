@@ -1,13 +1,39 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0;net48</TargetFrameworks>
+		<TargetFrameworks>net48;net7.0</TargetFrameworks>
 		<AutoIncrementPackageRevision></AutoIncrementPackageRevision>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Description>Faster Excel reader library.</Description>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<Title>Excel Reader Library</Title>
 		<RepositoryUrl>git@github.com:Daxxn/ExcelReaderLibrary.git</RepositoryUrl>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>excel;reader;parse;daxxn</PackageTags>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|AnyCPU'" />
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'" />
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0|AnyCPU'" />
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net48|AnyCPU'" />
+
+	<ItemGroup>
+	  <None Include="..\LICENSE.txt">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+	</ItemGroup>
 
 </Project>
