@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net48</TargetFrameworks>
+		<AutoIncrementPackageRevision></AutoIncrementPackageRevision>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Description>Faster Excel reader library.</Description>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<Title>Excel Reader Library</Title>
+		<RepositoryUrl>git@github.com:Daxxn/ExcelReaderLibrary.git</RepositoryUrl>
+	</PropertyGroup>
+
+</Project>
